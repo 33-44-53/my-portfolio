@@ -22,25 +22,25 @@ function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/10 to-blue-400/10 animate-pulse"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-12 z-20">
-            <div className="lg:w-1/2 text-left">
-              <h1 className="text-5xl font-bold text-yellow-400 mb-6">About Me</h1>
-              <p className="text-4xl text-white font-serif leading-relaxed animate-slide-up mb-6">
+            <div className="lg:w-1/2 text-left text-center lg:text-left">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-400 mb-6">About Me</h1>
+              <p className="text-2xl md:text-3xl lg:text-4xl text-white font-serif leading-relaxed animate-slide-up mb-6">
                 Hi, I'm Umer - Creative & Passionate Full-Stack Web Developer
               </p>
-              <p className="text-lg text-gray-300 mb-6">
+              <p className="text-base md:text-lg text-gray-300 mb-6">
                 I'm a dedicated full-stack web developer with 2+ years of experience creating innovative digital solutions. 
                 I specialize in modern web technologies and have a passion for clean, efficient code.
               </p>
-              <div className="flex space-x-4">
-                <span className="bg-yellow-400 text-black px-4 py-2 rounded-full font-semibold">Full-Stack Developer</span>
-                <span className="bg-blue-600 text-white px-4 py-2 rounded-full font-semibold">UI/UX Enthusiast</span>
+              <div className="flex flex-col sm:flex-row gap-4 sm:space-x-4 items-center lg:items-start">
+                <span className="bg-yellow-400 text-black px-4 py-2 rounded-full font-semibold text-sm md:text-base">Full-Stack Developer</span>
+                <span className="bg-blue-600 text-white px-4 py-2 rounded-full font-semibold text-sm md:text-base">UI/UX Enthusiast</span>
               </div>
             </div>
-            <div className="lg:w-1/2 flex justify-center">
+            <div className="lg:w-1/2 flex justify-center mt-8 lg:mt-0">
               <img
                 src={meImage}
                 alt="Umer"
-                className="w-80 h-80 rounded-xl shadow-2xl animate-slow-bounce hover:scale-110 hover:border-4 hover:border-yellow-400 transition-all duration-500 object-cover object-top cursor-pointer"
+                className="w-64 h-64 md:w-80 md:h-80 rounded-xl shadow-2xl animate-slow-bounce hover:scale-110 hover:border-4 hover:border-yellow-400 transition-all duration-500 object-cover object-top cursor-pointer"
               />
             </div>
           </div>
