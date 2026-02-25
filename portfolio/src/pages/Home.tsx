@@ -809,48 +809,45 @@ function Home() {
                 </motion.div>
               </div>
 
-              <div className="grid grid-cols-3 gap-4 mt-8">
+              <div className="flex gap-6 mt-8 justify-center lg:justify-start">
                 <motion.a 
                   href="https://www.linkedin.com/in/umer-selahadin-77b83b318/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="bg-blue-600 p-4 rounded-lg text-center hover:bg-blue-700 transition-colors"
+                  className="text-blue-600 hover:text-blue-700 transition-colors"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.7 }}
-                  whileHover={{ scale: 1.05, y: -5 }}
+                  whileHover={{ scale: 1.2, y: -5 }}
                   viewport={{ once: false, amount: 0.3 }}
                 >
-                  <FaLinkedin className="text-3xl text-white mx-auto mb-2" />
-                  <span className="text-white text-sm">LinkedIn</span>
+                  <FaLinkedin className="text-5xl" />
                 </motion.a>
                 <motion.a 
                   href="https://github.com/33-44-53" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-900 transition-colors"
+                  className="text-gray-800 hover:text-gray-900 transition-colors"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.8 }}
-                  whileHover={{ scale: 1.05, y: -5 }}
+                  whileHover={{ scale: 1.2, y: -5 }}
                   viewport={{ once: false, amount: 0.3 }}
                 >
-                  <FaGithub className="text-3xl text-white mx-auto mb-2" />
-                  <span className="text-white text-sm">GitHub</span>
+                  <FaGithub className="text-5xl" />
                 </motion.a>
                 <motion.a 
                   href="https://t.me/umem2034" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="bg-blue-500 p-4 rounded-lg text-center hover:bg-blue-600 transition-colors"
+                  className="text-blue-500 hover:text-blue-600 transition-colors"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.9 }}
-                  whileHover={{ scale: 1.05, y: -5 }}
+                  whileHover={{ scale: 1.2, y: -5 }}
                   viewport={{ once: false, amount: 0.3 }}
                 >
-                  <FaTelegram className="text-3xl text-white mx-auto mb-2" />
-                  <span className="text-white text-sm">Telegram</span>
+                  <FaTelegram className="text-5xl" />
                 </motion.a>
               </div>
             </motion.div>
