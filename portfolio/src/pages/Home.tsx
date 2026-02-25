@@ -280,9 +280,9 @@ function Home() {
                   href="https://tilawa-phi.vercel.app/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors"
+                  className="text-blue-500 hover:text-blue-600 hover:underline transition-colors"
                 >
-                  View Live Demo
+                  View Live Demo →
                 </a>
               </motion.div>
               <motion.div 
