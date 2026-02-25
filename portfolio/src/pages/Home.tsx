@@ -260,20 +260,30 @@ function Home() {
                 whileHover={{ scale: 1.05, y: -10 }}
                 viewport={{ once: false, amount: 0.3 }}
               >
-                <motion.img
-                  src={tilawaImage}
-                  alt="Tilawa App"
-                  className="w-full h-48 object-cover rounded-lg mb-4"
-                  whileHover={{ scale: 1.05 }}
-                />
+                <a href="https://tilawa-phi.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  <motion.img
+                    src={tilawaImage}
+                    alt="Tilawa App"
+                    className="w-full h-48 object-cover rounded-lg mb-4"
+                    whileHover={{ scale: 1.05 }}
+                  />
+                </a>
                 <h3 className="text-2xl font-semibold mb-4 text-green-600">Tilawa - Qur'an Recitation App</h3>
                 <p className="text-gray-700 mb-4">Full-stack app helping Muslims track Ramadan Qur'an reading goals with personalized tracking, authentic Arabic text, and progress statistics.</p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-4">
                   <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">Next.js</span>
                   <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">TypeScript</span>
                   <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">FastAPI</span>
                   <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">Python</span>
                 </div>
+                <a 
+                  href="https://tilawa-phi.vercel.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors"
+                >
+                  View Live Demo
+                </a>
               </motion.div>
               <motion.div 
                 className="bg-white border border-green-200 p-8 rounded-lg shadow-lg"
