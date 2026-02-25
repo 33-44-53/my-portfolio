@@ -1,5 +1,6 @@
 import meImage from '../assets/me.jpg'
 import ddImage from '../assets/dd.jpg'
+import tilawaImage from '/tilawa.jpg'
 import { motion } from 'framer-motion'
 
 function Home() {
@@ -252,6 +253,29 @@ function Home() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
+                whileHover={{ scale: 1.05, y: -10 }}
+                viewport={{ once: false, amount: 0.3 }}
+              >
+                <motion.img
+                  src={tilawaImage}
+                  alt="Tilawa App"
+                  className="w-full h-48 object-cover rounded-lg mb-4"
+                  whileHover={{ scale: 1.05 }}
+                />
+                <h3 className="text-2xl font-semibold mb-4 text-green-600">Tilawa - Qur'an Recitation App</h3>
+                <p className="text-gray-700 mb-4">Full-stack app helping Muslims track Ramadan Qur'an reading goals with personalized tracking, authentic Arabic text, and progress statistics.</p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">Next.js</span>
+                  <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">TypeScript</span>
+                  <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">FastAPI</span>
+                  <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">Python</span>
+                </div>
+              </motion.div>
+              <motion.div 
+                className="bg-white border border-green-200 p-8 rounded-lg shadow-lg"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.25 }}
                 whileHover={{ scale: 1.05, y: -10 }}
                 viewport={{ once: false, amount: 0.3 }}
               >
