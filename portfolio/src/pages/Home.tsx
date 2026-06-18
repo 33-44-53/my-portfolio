@@ -73,7 +73,7 @@ function Home() {
                 transition={{ duration: 0.8, delay: 1.0 }}
                 viewport={{ once: false, amount: 0.3 }}
               >
-                I'm a dedicated full-stack web developer with 2+ years of experience creating innovative digital solutions. 
+                I'm a dedicated full-stack web developer with 3+ years of experience creating innovative digital solutions. 
                 I specialize in modern web technologies and have a passion for clean, efficient code.
               </motion.p>
               <motion.div 
@@ -174,7 +174,7 @@ function Home() {
             </motion.p>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               {[
-                { number: "2+", text: "Years of Experience" },
+                { number: "3+", text: "Years of Experience" },
                 { number: "10+", text: "Projects Completed" },
                 { number: "5+", text: "Happy Clients" }
               ].map((stat, index) => (
