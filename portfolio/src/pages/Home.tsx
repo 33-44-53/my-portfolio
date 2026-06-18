@@ -2,7 +2,6 @@ import meImage from '../assets/me2.jpg'
 import ddImage from '../assets/dd.jpg'
 import tilawaImage from '../assets/tilawa.jpg'
 import auctionImage from '../assets/auction.png'
-import movieImage from '../assets/movie.jpg'
 import planeImage from '../assets/plane.jpg'
 import { motion } from 'framer-motion'
 import { FaLinkedin, FaGithub, FaTelegram } from 'react-icons/fa'
@@ -215,43 +214,29 @@ function Home() {
           >
             My Projects
           </motion.h2>
-          <div className="space-y-16">
-            <motion.div 
-              className="bg-white border border-green-200 rounded-lg overflow-hidden shadow-2xl"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              whileHover={{ scale: 1.02 }}
-              viewport={{ once: false, amount: 0.3 }}
-            >
-              <div className="md:flex">
-                <div className="md:w-1/2 p-8">
-                  <h3 className="text-3xl font-bold text-green-600 mb-4">DireDawa police clinic management system</h3>
-                  <p className="text-gray-700 mb-6">
-                    The Dire Dawa Police Clinic Management System is a digital platform that helps the clinic handle patient records,
-                     appointments, and daily operations more smoothly. It reduces paperwork and keeps information organized in one place.
-                      Staff can access what they need quickly, which speeds up service. 
-                    Overall, it makes the clinic's work easier and improves care for police officers and their families.
-                  </p>
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">React</span>
-                    <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">PHP</span>
-                    <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">MY SQL</span>
-                  </div>
+          <div className="grid md:grid-cols-2 gap-8">
+              <motion.div 
+                className="bg-white border border-green-200 p-8 rounded-lg shadow-lg"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                whileHover={{ scale: 1.05, y: -10 }}
+                viewport={{ once: false, amount: 0.3 }}
+              >
+                <motion.img
+                  src={ddImage}
+                  alt="Dire Dawa Police Clinic"
+                  className="w-full h-48 object-cover rounded-lg mb-4"
+                  whileHover={{ scale: 1.05 }}
+                />
+                <h3 className="text-2xl font-semibold mb-4 text-green-600">DireDawa Police Clinic Management System</h3>
+                <p className="text-gray-700 mb-4">A digital platform that helps the clinic handle patient records, appointments, and daily operations for police officers and their families.</p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">React</span>
+                  <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">PHP</span>
+                  <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">MySQL</span>
                 </div>
-                <div className="md:w-1/2 bg-green-50 flex items-center justify-center p-8">
-                  <motion.img
-                    src={ddImage}
-                    alt="Dire Dawa Police Clinic"
-                    className="w-48 h-48 rounded-full object-cover border-4 border-green-500"
-                    whileHover={{ scale: 1.1, rotate: 5 }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                  />
-                </div>
-              </div>
-            </motion.div>
-
-            <div className="grid md:grid-cols-2 gap-8">
+              </motion.div>
               <motion.div 
                 className="bg-white border border-green-200 p-8 rounded-lg shadow-lg"
                 initial={{ opacity: 0, y: 30 }}
@@ -276,12 +261,7 @@ function Home() {
                   <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">FastAPI</span>
                   <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">Python</span>
                 </div>
-                <a 
-                  href="https://tilawa-phi.vercel.app/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-blue-500 hover:text-blue-600 hover:underline transition-colors"
-                >
+                <a href="https://tilawa-phi.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600 hover:underline transition-colors">
                   View Live Demo →
                 </a>
               </motion.div>
@@ -289,7 +269,7 @@ function Home() {
                 className="bg-white border border-green-200 p-8 rounded-lg shadow-lg"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.25 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
                 whileHover={{ scale: 1.05, y: -10 }}
                 viewport={{ once: false, amount: 0.3 }}
               >
@@ -308,35 +288,9 @@ function Home() {
                   <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">Node.js</span>
                   <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">MongoDB</span>
                 </div>
-                <a
-                  href="https://auction-diredawa.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-500 hover:text-blue-600 hover:underline transition-colors"
-                >
+                <a href="https://auction-diredawa.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600 hover:underline transition-colors">
                   View Live Demo →
                 </a>
-              </motion.div>
-              <motion.div 
-                className="bg-white border border-green-200 p-8 rounded-lg shadow-lg"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                whileHover={{ scale: 1.05, y: -10 }}
-                viewport={{ once: false, amount: 0.3 }}
-              >
-                <motion.img
-                  src={movieImage}
-                  alt="Ethio Movie Platform"
-                  className="w-full h-48 object-cover rounded-lg mb-4"
-                  whileHover={{ scale: 1.05 }}
-                />
-                <h3 className="text-2xl font-semibold mb-4 text-green-600">Ethio Movie Platform</h3>
-                <p className="text-gray-700 mb-4">Ethiopian movie streaming platform with local content and user-friendly interface.</p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">React</span>
-                  <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">Node.js</span>
-                </div>
               </motion.div>
               <motion.div 
                 className="bg-white border border-green-200 p-8 rounded-lg shadow-lg"
@@ -359,7 +313,6 @@ function Home() {
                 </div>
               </motion.div>
             </div>
-          </div>
         </div>
       </motion.section>
 
