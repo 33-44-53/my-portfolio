@@ -1,9 +1,9 @@
-import meImage from '../assets/me.jpg'
+import meImage from '../assets/me2.jpg'
 import ddImage from '../assets/dd.jpg'
-import tilawaImage from '/tilawa.jpg'
-import weatherImage from '/weather.png'
-import movieImage from '/movie.jpg'
-import planeImage from '/plane.jpg'
+import tilawaImage from '../assets/tilawa.jpg'
+import auctionImage from '../assets/auction.png'
+import movieImage from '../assets/movie.jpg'
+import planeImage from '../assets/plane.jpg'
 import { motion } from 'framer-motion'
 import { FaLinkedin, FaGithub, FaTelegram } from 'react-icons/fa'
 
@@ -293,18 +293,29 @@ function Home() {
                 whileHover={{ scale: 1.05, y: -10 }}
                 viewport={{ once: false, amount: 0.3 }}
               >
-                <motion.img
-                  src={weatherImage}
-                  alt="Weather App"
-                  className="w-full h-48 object-cover rounded-lg mb-4"
-                  whileHover={{ scale: 1.05 }}
-                />
-                <h3 className="text-2xl font-semibold mb-4 text-green-600">Weather App</h3>
-                <p className="text-gray-700 mb-4">Real-time weather application with location-based forecasts.</p>
-                <div className="flex flex-wrap gap-2">
+                <a href="https://auction-diredawa.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  <motion.img
+                    src={auctionImage}
+                    alt="Auction Management System"
+                    className="w-full h-48 object-cover rounded-lg mb-4"
+                    whileHover={{ scale: 1.05 }}
+                  />
+                </a>
+                <h3 className="text-2xl font-semibold mb-4 text-green-600">Auction Management System</h3>
+                <p className="text-gray-700 mb-4">Digital auction platform for Dire Dawa Customs Commission, streamlining the auction process for seized and unclaimed goods.</p>
+                <div className="flex flex-wrap gap-2 mb-4">
                   <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">React</span>
-                  <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">API</span>
+                  <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">Node.js</span>
+                  <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">MongoDB</span>
                 </div>
+                <a
+                  href="https://auction-diredawa.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:text-blue-600 hover:underline transition-colors"
+                >
+                  View Live Demo →
+                </a>
               </motion.div>
               <motion.div 
                 className="bg-white border border-green-200 p-8 rounded-lg shadow-lg"
